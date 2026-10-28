@@ -1,3 +1,25 @@
+/**
+ * Problem : Bounded Blocking Queue (Concurrency Focus)
+ * Design and implement a thread-safe, bounded blocking queue from scratch.
+ *
+ * Requirements:
+ *
+ * enqueue(item): Adds an item to the back of the queue. If the queue is at capacity, the calling thread must block until space becomes available.
+ *
+ * dequeue(): Removes and returns the item at the front of the queue. If the queue is empty, the calling thread must block until an item is available.
+ *
+ * size(): Returns the current number of elements.
+ *
+ * Constraints:
+ *
+ * You cannot use any built-in concurrent collections (like ArrayBlockingQueue or LinkedBlockingQueue).
+ *
+ * You cannot use the synchronized keyword. You must use explicit locks (e.g., ReentrantLock and Condition variables).
+ *
+ * Your solution must explicitly handle thread interruption and spurious wakeups.
+ */
+
+
 package LowLevel;
 
 import java.util.LinkedList;
